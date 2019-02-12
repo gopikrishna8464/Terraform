@@ -1,6 +1,6 @@
-#
+
 # Module: aws_redshift_with_S3_bucket
-#
+
 
 # This template creates the following resources
 # - An Redshift cluster
