@@ -1,6 +1,5 @@
-#
 # Module: aws_redshift_with_S3_bucket
-#
+
 
 # Redshift Cluster Variables
 
@@ -11,16 +10,10 @@ variable "cluster_identifier" {
 variable "cluster_version" {
   description = "Version of Redshift engine cluster"
   default     = "1.0"
-
-  # Constraints: Only version 1.0 is currently available.
-  # http://docs.aws.amazon.com/cli/latest/reference/redshift/create-cluster.html
 }
 
 variable "cluster_node_type" {
   description = "Node Type of Redshift cluster"
-
-  # Valid Values: ds1.xlarge | ds1.8xlarge | ds2.xlarge | ds2.8xlarge | dc1.large | dc1.8xlarge.
-  # http://docs.aws.amazon.com/cli/latest/reference/redshift/create-cluster.html
 }
 
 variable "cluster_number_of_nodes" {
