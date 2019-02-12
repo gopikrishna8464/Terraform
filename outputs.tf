@@ -1,7 +1,4 @@
-#
 # Module: aws_redshift_with_S3_bucket
-#
-
 # Output the ID of the Redshift cluster
 output "redshift_cluster_id" {
   value = "${aws_redshift_with_S3_bucket.main_redshift_cluster.id}"
